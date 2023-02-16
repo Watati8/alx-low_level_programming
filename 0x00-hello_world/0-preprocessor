@@ -1,0 +1,4 @@
+#!/bin/bash
+#include <stdio.h>
+gcc -E $CFILE
+gcc -E $CFILE -o c
