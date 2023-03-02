@@ -1,27 +1,26 @@
 #include <stdio.h>
 #include "main.h"
 
-char *_strcat(char *dest, char *src);
+
+char *_strcat(char *dest, char *src)
 {
-  char s1[100] = "programming ", s2[] = "is awesome";
-  int length, j;
+	int i, j;
 
-  // store length of s1 in the length variable
-  length = 0;
-  while (s1[length] != '\0') {
-    ++length;
-  }
+	i = 0;
 
-  // concatenate s2 to s1
-  for (j = 0; s2[j] != '\0'; ++j, ++length) {
-    s1[length] = s2[j];
-  }
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
 
-  // terminating the s1 string
-  s1[length] = '\0';
+	j = 0;
 
-  printf("After concatenation: ");
-  puts(s1);
-
-  return 0;
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }
