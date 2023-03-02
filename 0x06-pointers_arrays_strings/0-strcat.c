@@ -1,6 +1,12 @@
-#include <stdio.h>
-#include "main.h"
-
+/**
+ * _strcat - concatinate the values of two integers.
+ *
+ * @dest: arg a
+ *
+ * @src: arg b
+ *
+ * Return: void.
+ */
 
 char *_strcat(char *dest, char *src)
 {
